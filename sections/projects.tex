@@ -3,23 +3,31 @@
 \resumeSubHeadingListStart
 
 \resumeEntry
-    {Solana Cross-Merchant Loyalty dApp}{Colosseum Solana Frontier Hackathon}
-    {}{Apr - May 2026}
+    {AI Resume Screening Platform}{Personal Project}
+    {}{Feb - Apr 2025}
     \resumeItemListStart
-        \item {Built a Solana-based cross-merchant loyalty dApp (Rust smart contract + Next.js frontend) that lets users combine points across merchants to meet redemption thresholds, turning fragmented, unspendable balances into redeemable rewards.}
-        \item {Implemented on-chain point conversion logic in Rust, handling cross-merchant exchange-rate calculation and balance settlement directly within the smart contract.}
-        \item {Developed the web frontend integrating Solana wallet connection and on-chain transaction signing, with point balances syncing to on-chain state in real time.}
-        \item {Delivered the project as part of the Colosseum Solana Frontier Hackathon, integrating multiple merchant demo apps against a shared smart contract.}
+        \item {Built an end-to-end resume screening tool using a fine-tuned LLM and vector search (LangChain + Pinecone) to rank candidates against job descriptions.}
+        \item {Processed 10,000+ resumes in evaluation testing, cutting manual screening time by 70\% while maintaining 92\% agreement with human reviewers.}
+        \item {Deployed as a FastAPI service on AWS with Docker, serving predictions with average latency under 300ms.}
     \resumeItemListEnd
 \vspace{-2mm}
 
 \resumeEntry
-    {ERC20 Staking}{Fullstack Developer}
-    {}{October 2024}
+    {Automated Vulnerability Scanner}{Personal Project}
+    {}{Oct - Dec 2024}
     \resumeItemListStart
-        \item {Built an ERC20 single-token staking pool in Solidity with reward-per-second distribution and no lock-up, allowing users to stake, withdraw, and claim rewards at any time.}
-        \item {Implemented and tested the staking contract using Foundry, covering reward-accrual math and edge cases (zero-stake, multi-user reward distribution).}
-        \item {Structured the project as a monorepo (Solidity contract + Next.js frontend with Wagmi/Viem) and automated ABI/address syncing between contract and frontend via custom scripts.}
+        \item {Developed a Python-based scanner that chains Nmap, OWASP ZAP, and custom checks to detect OWASP Top 10 vulnerabilities across web applications.}
+        \item {Generated automated remediation reports, reducing manual security audit time by 80\% across 15+ test applications.}
+        \item {Open-sourced the tool on GitHub, reaching 300+ stars and 20+ community contributors.}
+    \resumeItemListEnd
+\vspace{-2mm}
+
+\resumeEntry
+    {Real-Time Distributed Chat Platform}{Personal Project}
+    {}{Jun - Aug 2024}
+    \resumeItemListStart
+        \item {Architected a horizontally-scalable chat backend (Go + Redis Pub/Sub + WebSockets) supporting 50,000+ concurrent connections in load testing.}
+        \item {Implemented end-to-end message encryption and rate limiting, preventing abuse without impacting message delivery latency (under 50ms p99).}
     \resumeItemListEnd
 \vspace{-2mm}
 
