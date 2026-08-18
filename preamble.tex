@@ -1,0 +1,82 @@
+% ==================================================================
+%  PREAMBLE — packages, page/formatting rules, custom commands.
+%  This is the "engine" of the template. You should rarely need to
+%  touch this file; edit config.tex or sections/*.tex instead.
+% ==================================================================
+
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{15pt} % silences fancyhdr's "footskip too small" warning
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section title formatting (plain rule under an \scshape heading)
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+
+% A single bold-label + description item, e.g. inside Skills.
+%   \resumeItem{Languages}{: Python, TypeScript, Go}
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+% Two-line entry used for Education / Experience / Volunteering / Projects.
+%   \resumeEntry{Title}{Org / Subtitle}{Detail (optional)}{Date}
+% Renders as:
+%   Title                                                    Date
+%   Org / Subtitle                                           Detail
+\newcommand{\resumeEntry}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#2}} & \footnotesize{#3}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+% Compact one-line entry used for Achievements / short Certifications.
+%   \resumeCompactEntry{Title}{Description}{Date}
+\newcommand{\resumeCompactEntry}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+%---- End of Preamble ------

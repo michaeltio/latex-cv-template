@@ -1,0 +1,60 @@
+## Core LaTeX build artifacts
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Bibliography
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool directories/files
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+latex.out/
+
+## Auto-generated
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+*.slg
+*.sls
+*.slo
+*.ist
+*.maf
+*.mlf
+*.mlt
+*.mtc
+*.mtc0
+*.idx
+*.ind
+*.ilg
+
+## Editor / OS files
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+## Generated PDF (keep out of the repo; users compile their own)
+main.pdf
